@@ -1,0 +1,110 @@
+@model Repair_shop.Models.HoaDonTam
+
+@{
+    ViewData["Title"] = "Details";
+    int id = Model.id;
+}
+
+
+<div>
+    <h4>Hoa Don Tam</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Ma hoa don tam:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(modelItem => modelItem.id)
+        </dd>
+        <dt class="col-sm-2">
+            Ten khach hang:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(modelItem => modelItem.khachhang.firstName)
+        </dd>
+        <dt class="col-sm-2">
+            SDT khach hang:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(modelItem => modelItem.khachhang.phone)
+        </dd>
+        <dt class="col-sm-2">
+            Loai xe:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(modelItem => modelItem.xe.tenXe)
+        </dd>
+        <dt class="col-sm-2">
+            Bien so xe:
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(modelItem => modelItem.xe.id)
+        </dd>
+    </dl>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID linh kien</th>
+            <th>Ten linh kien</th>
+            <th>So luong</th>
+            <th>Ton kho</th>
+            <th>Gia</th>
+            <th>Thanh tien</th>
+            <th>Status</th>
+        
+        </tr>
+    </thead>
+    <tbody>
+         
+        @foreach (var item in Model.hoaDonTamLinhKienXes)
+            { 
+            /*{
+
+                int thanhTien = item.linhKien.price * item.soluong;
+                int res;
+                
+                if (item.soluong > item.linhKien.partInStock)
+                {
+                    res = 0;
+                }
+                else
+                {
+                    res = 1;
+                }
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.linhKien.partID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.linhKien.partName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.soluong)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.linhKien.partInStock)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.linhKien.price)
+                </td>
+                <td>
+                    @thanhTien
+                </td>
+                <td>
+                    @res
+                </td>
+
+            </tr>
+            */
+             }
+        
+    </tbody>
+    </table>
+    <div>
+        
+        <a asp-action="Success" asp-route-id = "@id" asp-controller="HoaDonGiao" class="btn btn-primary" >
+            Confirm
+        </a>
+            
+    </div>

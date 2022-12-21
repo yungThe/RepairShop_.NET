@@ -1,0 +1,58 @@
+@model IEnumerable<Repair_shop.Models.LinhKien>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Kho linh kien</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                ID
+            </th>
+            <th>
+                Ten linh kien
+            </th>
+            <th>
+                Ton kho
+            </th>
+            <th>
+                Mo ta
+            </th>
+            <th>
+                Gia
+            </th>
+            
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.partID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.partName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.partInStock)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.partDesc)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.price)
+            </td>
+            <td>
+                
+                <a asp-action="Details" asp-route-id="@item.partID">Details</a> 
+            
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,55 @@
+@model IEnumerable<Repair_shop.Models.HoaDonTam>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Danh sach hoa don tam</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form asp-controller="HoaDonTam" asp-action="Index">
+            <div class="form-group">
+                <input name="SearchString" class="form-control" placeholder="Nhap ma hoa don tam"/>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Search" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Ten khach hang</th>
+            <th>Loai xe</th>
+            <th>Bien so xe</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.khachhang.firstName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.xe.tenXe)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.xe.id)
+            </td>
+            
+            <td>
+
+                <a asp-action="Details" asp-route-id="@item.id">Details</a>
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
