@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Edtmf4GPhnWG+cCOzByno8rXyMrUPSJ935Rp4Anp5gtRpXRBM9jpP1PFx5r0MqOen9eLBMdjHKcIV64TnxAZGA==",
+  "dgSpecHash": "30H6lMJOQpp0HaMVkQUW1AtvfNvsV4OhlUB5e+8wUlBjj/aL/lIVHwxjwMFwIh7AyC/DUywtg3cubMWRAWRtiQ==",
   "success": true,
-  "projectFilePath": "/Users/thedung/Projects/Program/Repair_shop/Repair_shop.csproj",
+  "projectFilePath": "/Users/thedung/workspace/RepairShop_.NET/Repair_shop/Repair_shop.csproj",
   "expectedPackageFiles": [
     "/Users/thedung/.nuget/packages/coverlet.collector/3.2.0/coverlet.collector.3.2.0.nupkg.sha512",
     "/Users/thedung/.nuget/packages/humanizer.core/2.8.26/humanizer.core.2.8.26.nupkg.sha512",

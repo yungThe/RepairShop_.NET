@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Z9iFHpaPg2fQVQAa6C5Cf2vWOjaPTbHut1XVOEbcpD16p0HDtZtFVQOBo5h5Buj+TuNa7JS6Gz87UAOx9f+79Q==",
+  "dgSpecHash": "rVemrI+ydI4slzyjeDjx+aUKqFI+3ixMQIJs1s8DlEptWDUobRzwxBOjJsGuH0K+qJccXN3KXMvw7XCM4t+JrA==",
   "success": true,
-  "projectFilePath": "/Users/thedung/Projects/Program/Repair_shop.Tests/Repair_shop.Tests.csproj",
+  "projectFilePath": "/Users/thedung/workspace/RepairShop_.NET/Repair_shop.Tests/Repair_shop.Tests.csproj",
   "expectedPackageFiles": [
     "/Users/thedung/.nuget/packages/castle.core/5.1.0/castle.core.5.1.0.nupkg.sha512",
     "/Users/thedung/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
